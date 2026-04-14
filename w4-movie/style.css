@@ -1,0 +1,65 @@
+body{
+    text-align: center;
+    display:flex; 
+    justify-content: center;
+    background-color: black;
+    font-family:'sekuya';
+    font-size: small;
+    
+}
+
+
+
+#header{
+    color:aliceblue;
+    text-align: center;
+    font-family:'sekuya'
+
+}
+
+  
+#nav-bar{
+    text-align: center;
+}
+
+#nav-bar:hover{
+    font-size:small;
+}
+
+#content{
+    border: 5px solid rgb(255, 255, 255);
+    width: 1000px;
+    height: 1050px;
+
+}
+
+h2{
+    color:aliceblue;
+}
+
+
+p{
+    color: aliceblue;
+}
+ 
+/* INTCAST.HTML STYLESHEET*/
+body{
+    display:flex; 
+    justify-content: center;
+    background-color: black;
+    font-family:'sekuya';
+    font-size: small;  
+}
+
+#header2{
+    color:aliceblue;
+    text-align: center;
+    font-family:'sekuya'
+}
+
+#content2{
+    border: 5px solid rgb(255, 255, 255);
+    width: 1000px;
+    height: 1050px;
+}
+    
