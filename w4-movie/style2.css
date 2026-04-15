@@ -1,6 +1,6 @@
 /* INTCAST.HTML STYLESHEET*/
 body{ 
-    display:grid;
+    display:flex;
     text-align: center;
     justify-content: center;
     background-color: black;
@@ -13,22 +13,38 @@ body{
     text-align: center;
     color:aliceblue;
     font-family:'sekuya';
-    
+    animation-name: myAnimate;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
 }
 
 #nav-bar2{
     text-align: center;
+    animation-name: sizeChange;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
 }
 
-#nav-bar2:hover{
-    font-size: small;
+#nav-bar2visited {
+color: aliceblue;
 }
 
-#content2{
-    align-content: center;
-    border: 5px solid rgb(255, 255, 255);
+
+#character2{
+    color:aliceblue;
+    align-items: center;
+    border: 5px solid aliceblue;
     width: 1000px;
-    height: 950px;
+    height: 750px; 
+}
+
+#footer{
+    text-align: center;
+}
+
+
+#footer2{
+    font-size: x-small;
 }
 
 h2{
@@ -38,3 +54,23 @@ h2{
 p{
     color:aliceblue
 }
+
+
+@keyframes myAnimate {
+    0% {color: aliceblue;}
+    25%{color: rgb(rgb(68, 138, 170), rgb(36, 83, 114), rgb(79, 79, 170)) ;}
+    50%{color:blueviolet;}
+    75%{color:purple;}
+    100%{color: aliceblue;}
+}
+
+@keyframes sizeChange{
+    from{
+        font-size: 10px;
+    }
+    to{
+        font-size: 12;
+    }
+}
+  
+
