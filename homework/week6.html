@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Week 6 homework</title>
+</head>
+<body>
+    
+    <script>
+
+        alert("Hello. \n Welcome to the net income machine")
+
+        var pay = Number(prompt("What is your hourly pay?"))
+        var hour = Number(prompt("How many hours do you work?"))
+
+        function gross(pay,hour){
+            return pay * hour
+        }
+
+        var additive = gross(pay,hour)
+
+        function uncle(additive,y){
+            return additive * 0.20
+        }
+
+        var takeaway = uncle(additive,y)
+
+        function net(additive,takeaway){
+            return additive - takeaway
+        }
+
+        function total(){
+        var resultOne = gross(pay,hour)
+        var reultTwo = uncle(additive,y)
+        var resultThree = net(additive,takeaway)
+        }
+
+        alert(total)
+
+
+
+    </script>
+
+
+
+
+</body>
+</html>
