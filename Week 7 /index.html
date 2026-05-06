@@ -18,6 +18,23 @@
     <input type="button" id="decrement" value="decrease">
 
 
+    <br> 
+    <br>
+    <br> 
+
+    <div id="jokeContainer">
+        <div id="question">
+            <h2> Why did the scarecrow get a promotion?</h2>
+        </div>
+
+        <div id="answer">
+
+        </div>
+        <input type="button" id="giveAnswer" value="Why?">
+
+    </div>
+
+
 <script> 
     var numberText = document.querySelector("#number")
 
@@ -42,6 +59,16 @@
 
         increaseButton.addEventListener("click",addToNumber)
         increaseButton.addEventListener("click",subtractFromNumber)
+
+        var giveJokeAnswer = document.querySelector("#giveAnswer")
+        var answerContainer = document.querySelector("#answer")
+
+        function giveAnswer() 
+        {
+            answerContainer.innerHTML += <h3>He was outstanding in his field</h3>
+        }
+        
+        giveJokeAnswer .addEventListener("click", giveAnswer)
 
 
 </script>
