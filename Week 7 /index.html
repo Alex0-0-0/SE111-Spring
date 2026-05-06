@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1> Week 7 | MORE JAVA</h1>
+
+        <!-- setting up display -->
+    <h2> Current number </h2>
+    <h2 id="number"> 0 </h2>
+    <hr>
+
+    <!-- Setting up buttons -->
+    <input type="button" id="increment" value="increase">
+    <input type="button" id="decrement" value="decrease">
+
+
+<script> 
+    var numberText = document.querySelector("#number")
+
+    var increaseButton = document.querySelector("#increment")
+    var decreaseButton = document.querySelector("#decrement")
+
+    var currentNumber = 0;
+
+
+    function addToNumber()
+    {
+        currentNumber++;
+
+        numberText.innerHTML = currentNumber
+    }
+
+    function subtractFromNumber()
+    {
+        currentNumber--;
+         numberText.innerHTML = currentNumber
+    }
+
+        increaseButton.addEventListener("click",addToNumber)
+        increaseButton.addEventListener("click",subtractFromNumber)
+
+
+</script>
+    
+</body>
+</html>
